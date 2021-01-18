@@ -1,0 +1,40 @@
+#immagine{
+    width: 25px;
+    height:25px;
+    margin-bottom: -5px;
+    animation: animazione1 8s linear infinite;
+}
+@keyframes animazione1 {
+    0%{
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(180deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    75%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+#contrno {
+    margin-top: -30px;
+    margin-left: 600px;
+    background-color: white;
+    border-radius: 100%;
+    width: 400px;
+    height: 70px;
+    border: 3px solid black;
+
+}
+#button:hover{
+    transform: scale(1.1);
+    transition: background-color 0.5s, transform 0.5s;
+}

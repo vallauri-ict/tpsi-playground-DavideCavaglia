@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Generatore di utenti</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body style="font-family: 'fantasy'">
+    <h1 style="color: black" >Generatore di utenti casuali</h1>
+    <div  id="filtri">
+
+        <button type="button" onclick="generateUsers()" id="button" style="font-family: 'Baskerville Old Face'">Generatore di utenti</button>
+        <br>
+        <br>
+        <div id="naz">
+
+            <label for="naz">Nazionalita':</label>
+
+            <label><input type="checkbox" name="naz" value="br" class="r" />Brasile</label>
+            <label><input type="checkbox" name="naz" value="au" class="r" />Austria</label>
+            <label><input type="checkbox" name="naz" value="de" class="r" />Germania</label>
+            <label><input type="checkbox" name="naz" value="fr" class="r" />Francia</label>
+            <label><input type="checkbox" name="naz" value="gb" class="r" />Gran Bretagna</label>
+            <label><input type="checkbox" name="naz" value="us" class="r" />Stati Uniti</label>
+            <label><input type="checkbox" name="naz" value="ca" class="r" />Canada</label>
+            <label><input type="checkbox" name="naz" value="ch" class="r" />Cile</label>
+            <label><input type="checkbox" name="naz" value="dk" class="r" />Danimarca</label>
+            <label><input type="checkbox" name="naz" value="es" class="r" />Estonia</label>
+            <label><input type="checkbox" name="naz" value="fi" class="r" />Finlandia</label>
+            <label><input type="checkbox" name="naz" value="ie" class="r" />Irlanda</label>
+            <label><input type="checkbox" name="naz" value="ir" class="r" />Iran</label>
+            <label><input type="checkbox" name="naz" value="nl" class="r" />Olanda</label>
+            <label><input type="checkbox" name="naz" value="nz" class="r" />Nuova Zelanda</label>
+            <label><input type="checkbox" name="naz" value="tr" class="r" />Turchia</label>
+        </div>
+        <br>
+        <br>
+        <div id="genere">
+            <label for="genere">Sesso:</label>
+
+            <label><input type="radio" name="sesso" value="M" class="sex"/>Maschio</label>
+            <label><input type="radio" name="sesso" value="F" class="sex"/>Femmina</label>
+        </div>
+        <br>
+        <br>
+        <div id="password2">
+            <label for="password">Password:</label>
+            <label><input type="checkbox" name="pas" value="Maiu" class="p" />Maiuscola</label>
+            <label><input type="checkbox" name="pas" value="Minu" class="p" />Minuscola</label>
+            <label><input type="checkbox" name="pas" value="Spec" class="p" />Caratteri Speciali</label>
+            <label><input type="checkbox" name="pas" value="Nume" class="p" />Numeri</label>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="contrno">
+        <a href="https://www.instagram.com/davide.cavaglia/" style="text-decoration: none"><h2 style="text-align: center"><img src="download.jpg" id="immagine">Vieni a trovarmi</h2></a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="Generati>">
+        <img src="" class="gen" id="img">
+        <h3 id="name" class="gen">Nome: </h3>
+        <h3 id="surname" class="gen">Cognome: </h3>
+        <h3 id="gender" class="gen">Sesso: </h3>
+        <h3 id="nationality" class="gen">Nazionalita': </h3>
+        <h3 id="email" class="gen">Email: </h3>
+        <h3 id="password" class="gen">Password: </h3>
+    </div>
+    </body>
+</html>
